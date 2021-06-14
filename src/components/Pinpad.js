@@ -25,6 +25,20 @@ const Pinpad = () => {
 
     function enterHandler(e) {
         e.preventDefault();
+        if (attempts === 1 && input === code) {
+            setLocked(1);
+            setChanger("text");
+            setInput("OK");
+            setAttempts((prevAttempts) => prevAttempts - 1);
+            const timer = setTimeout(() => {
+                setAttempts(3);
+                setLocked(0);
+                setInput("");
+                setChanger("password");
+            }, 2000)
+
+            return () => clearTimeout(timer);
+        }
         if (attempts === 1) {
             setChanger("text");
             setInput("LOCKED");
@@ -39,6 +53,8 @@ const Pinpad = () => {
 
             return () => clearTimeout(timer);
         }
+
+
         if (input === "") {
             setLocked(1);
             setChanger("text");
