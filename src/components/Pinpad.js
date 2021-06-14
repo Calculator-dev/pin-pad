@@ -17,6 +17,7 @@ const Pinpad = () => {
     }
 
 
+
     function clearHandler(e) {
         e.preventDefault();
         setInput("");
@@ -41,27 +42,37 @@ const Pinpad = () => {
         if (input === "") {
             setLocked(1);
             setChanger("text");
-            setInput("ERROR");
-            setAttempts((prevAttempts) => prevAttempts - 1);
+            setInput("Please enter your PIN");
             const timer = setTimeout(() => {
                 setLocked(0);
                 setInput("");
                 setChanger("password");
 
-            }, 2000)
+            }, 3000)
 
             return () => clearTimeout(timer);
         }
         if (input.length > 4) {
             setLocked(1);
             setChanger("text");
-            setInput("ERROR");
-            setAttempts((prevAttempts) => prevAttempts - 1);
+            setInput("Your pin should contain 4 digits");
             const timer = setTimeout(() => {
                 setLocked(0);
                 setInput("");
                 setChanger("password");
-            }, 2000)
+            }, 3000)
+
+            return () => clearTimeout(timer);
+        }
+        else if (input.length < 4) {
+            setLocked(1);
+            setChanger("text");
+            setInput("Your pin should contain 4 digits");
+            const timer = setTimeout(() => {
+                setLocked(0);
+                setInput("");
+                setChanger("password");
+            }, 3000)
 
             return () => clearTimeout(timer);
         }
