@@ -148,7 +148,7 @@ const Pinpad = () => {
                 <button disabled={locked} onClick={() => setInput((input) => `${input}9`)}>9</button>
                 <br />
                 <button disabled={locked} className="enter" onClick={enterHandler}>Enter</button>
-                <button disabled={locked} onClick={() => setInput((input) => `${input}0`)}>0</button>
+                <button disabled={locked} onClick={() => setInput((input) => `${input}0`)}>15</button>
                 <button disabled={locked} className="clear" onClick={clearHandler}>Clear</button>
             </div>
             <AppFooter />
