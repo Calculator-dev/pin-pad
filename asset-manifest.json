@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pin-pad/static/css/main.3e0c2c5a.chunk.css",
+    "main.js": "/pin-pad/static/js/main.244af4c9.chunk.js",
+    "main.js.map": "/pin-pad/static/js/main.244af4c9.chunk.js.map",
+    "runtime-main.js": "/pin-pad/static/js/runtime-main.dd7dd659.js",
+    "runtime-main.js.map": "/pin-pad/static/js/runtime-main.dd7dd659.js.map",
+    "static/js/2.fbf39d68.chunk.js": "/pin-pad/static/js/2.fbf39d68.chunk.js",
+    "static/js/2.fbf39d68.chunk.js.map": "/pin-pad/static/js/2.fbf39d68.chunk.js.map",
+    "index.html": "/pin-pad/index.html",
+    "static/css/main.3e0c2c5a.chunk.css.map": "/pin-pad/static/css/main.3e0c2c5a.chunk.css.map",
+    "static/js/2.fbf39d68.chunk.js.LICENSE.txt": "/pin-pad/static/js/2.fbf39d68.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd7dd659.js",
+    "static/js/2.fbf39d68.chunk.js",
+    "static/css/main.3e0c2c5a.chunk.css",
+    "static/js/main.244af4c9.chunk.js"
+  ]
+}
